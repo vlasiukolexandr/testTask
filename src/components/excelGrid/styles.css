@@ -1,0 +1,74 @@
+body { 
+  font-family: 'Helvetica Neue', Helvetica; 
+  font-weight: 300; 
+  padding: 20px; 
+  font-size: 14px; 
+}
+table { border-collapse: collapse; }
+th {
+  text-align: left;
+  border: 1px solid #aaa;
+  background-color: #ccc;
+}
+td { border: 1px dotted #c0c0c0;}
+th, td { padding: 3px 8px;}
+th { padding: 5px 8px;}
+th.center, td.center { text-align: center; }
+th.num, td.num { text-align: right; }
+
+svg {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  touch-action: pinch-zoom;
+  position: absolute;
+  top: 0;
+}
+
+#gridContainer {
+  position: relative;
+  width: 100%;
+  height: max-content;
+  transform-origin: 0 0;
+}
+
+#grid {
+  position: relative;
+  overflow: hidden;
+  width: max-content;
+  height: max-content;
+  transform-origin: 0 0;
+}
+
+.text {
+  /* padding: 10px; */
+  background-color: white;
+  /* margin: 10px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100%);
+  height: calc(100%);
+}
+
+.text-wrapper {
+  position: relative;
+  border: 1px solid black;
+}
+
+.point-bottom {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  position: absolute;
+  right: -5px;
+  bottom: -5px;
+  cursor: se-resize;
+}
+
+#color {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
