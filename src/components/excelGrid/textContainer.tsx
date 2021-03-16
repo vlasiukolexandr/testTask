@@ -1,6 +1,5 @@
 import { Button } from "@material-ui/core";
 import React, { useCallback } from "react";
-import 'react-datasheet/lib/react-datasheet.css';
 
 import * as d3 from 'd3';
 
